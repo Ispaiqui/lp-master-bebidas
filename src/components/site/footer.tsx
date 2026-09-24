@@ -27,7 +27,7 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-primary">
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-8">
-        <Logo aria-hidden className="text-3xl" />
+        <Logo aria-hidden className="text-2xl lg:text-3xl" />
         <p className="text-sm text-foreground">
           Master Bebidas — sempre com você
         </p>

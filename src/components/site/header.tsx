@@ -10,6 +10,7 @@ const links = [
   { href: "#produtos", label: "Produtos" },
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#eventos", label: "Eventos" },
+  { href: "#localizacao", label: "Localização" },
 ];
 
 function toggleTheme() {
@@ -55,7 +56,7 @@ export function Header() {
           aria-label="Master Bebidas"
           className="inline-flex justify-self-start py-1"
         >
-          <Logo className="text-4xl" />
+          <Logo className="text-3xl md:text-4xl" />
         </a>
         <nav
           aria-label="Seções da página"

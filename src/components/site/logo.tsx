@@ -13,7 +13,7 @@ export function Logo({ className, ...props }: ComponentProps<"span">) {
       <span className="font-logo uppercase tracking-tight text-foreground">
         Master
       </span>
-      <span className="-mt-[0.42em] -rotate-6 font-script text-[0.52em] text-product dark:[text-shadow:0_0_0.1em_var(--product),0_0_0.35em_var(--primary)]">
+      <span className="logo-script -mt-[0.42em] -rotate-6 font-script text-[0.52em] text-product">
         Bebidas
       </span>
     </span>

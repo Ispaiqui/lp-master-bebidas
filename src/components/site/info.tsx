@@ -4,8 +4,8 @@ import { cn } from "cn";
 export function Info() {
   return (
     <section className="border-t border-border">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-12 sm:py-16">
-        <p className="max-w-2xl text-lg leading-relaxed text-foreground">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:gap-5 sm:py-12 lg:gap-6 lg:py-16">
+        <p className="max-w-2xl text-base leading-relaxed text-foreground lg:text-lg">
           Na Master Bebidas você encontra qualidade, variedade e aquele preço
           que cabe no bolso.
         </p>

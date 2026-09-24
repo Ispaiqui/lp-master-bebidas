@@ -3,6 +3,7 @@ import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
 import { Hero } from "@/components/site/hero";
 import { Info } from "@/components/site/info";
+import { Location } from "@/components/site/location";
 import { PlaceholderSection } from "@/components/site/placeholder-section";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Catalog />
         <PlaceholderSection id="quem-somos" title="Quem somos" />
         <PlaceholderSection id="eventos" title="Eventos" />
+        <Location />
       </main>
       <Footer />
     </>

@@ -71,7 +71,8 @@
   --border: #d3ddd4;
   --input: #d3ddd4;
   --ring: #217c39;
-  --product: #18632e;
+  --product: #157a34;
+  --logo-glow: #2ea84a;
   --chart-1: #217c39;
   --chart-2: #18632e;
   --chart-3: #132017;
@@ -109,6 +110,7 @@
   --input: #24352a;
   --ring: #3caf58;
   --product: #62d488;
+  --logo-glow: #3caf58;
   --chart-1: #3caf58;
   --chart-2: #62d488;
   --chart-3: #e7f2e8;
@@ -134,5 +136,15 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .logo-script {
+    text-shadow:
+      0 0 0.12em var(--logo-glow),
+      0 0 0.4em color-mix(in srgb, var(--logo-glow) 55%, transparent);
+  }
+  .dark .logo-script {
+    text-shadow:
+      0 0 0.1em var(--product),
+      0 0 0.35em var(--primary);
   }
 }
