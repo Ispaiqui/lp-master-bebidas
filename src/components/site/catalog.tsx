@@ -27,7 +27,7 @@ function ProductCard({ item }: { item: CatalogItem }) {
             src={item.imageSrc}
             alt={item.name}
             fill
-            sizes="(max-width: 639px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 280px"
+            sizes="168px"
             quality={90}
             className="object-cover transition-transform duration-300 hover:scale-105"
           />
@@ -37,7 +37,9 @@ function ProductCard({ item }: { item: CatalogItem }) {
           </p>
         )}
       </div>
-      <h3 className="text-sm font-medium text-product sm:text-base">{item.name}</h3>
+      <h3 className="text-center text-sm font-medium text-product sm:text-base">
+        {item.name}
+      </h3>
     </article>
   );
 }
@@ -54,9 +56,11 @@ function ProductGroup({
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <h2 className="text-lg font-semibold text-foreground lg:text-xl">{title}</h2>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+    <div className="flex w-full flex-col items-center gap-6">
+      <h2 className="text-center text-lg font-semibold text-foreground lg:text-xl">
+        {title}
+      </h2>
+      <div className="grid w-full justify-center gap-3 [grid-template-columns:repeat(auto-fit,minmax(9rem,10.5rem))]">
         {items.map((item) => (
           <ProductCard key={item.id} item={item} />
         ))}
@@ -80,7 +84,7 @@ export function Catalog() {
 
   return (
     <section id="produtos" className="scroll-mt-20 border-t border-border">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-10 sm:py-12 lg:gap-12 lg:py-16">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-8 sm:gap-10 sm:py-12 lg:gap-12 lg:py-16">
         <FilterPills
           label="Ocasião"
           value={occasion}

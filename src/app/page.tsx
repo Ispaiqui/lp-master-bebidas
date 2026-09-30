@@ -5,6 +5,7 @@ import { Hero } from "@/components/site/hero";
 import { Info } from "@/components/site/info";
 import { Location } from "@/components/site/location";
 import { PlaceholderSection } from "@/components/site/placeholder-section";
+import { Testimonials } from "@/components/site/testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <PlaceholderSection id="quem-somos" title="Quem somos" />
         <PlaceholderSection id="eventos" title="Eventos" />
         <Location />
+        <Testimonials />
       </main>
       <Footer />
     </>

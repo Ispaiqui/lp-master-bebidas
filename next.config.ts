@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // OneDrive/synced folders: less disk churn during local dev.
+    turbopackFileSystemCacheForDev: false,
+  },
   images: {
     qualities: [75, 90],
     formats: ["image/avif", "image/webp"],

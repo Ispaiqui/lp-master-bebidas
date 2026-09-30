@@ -11,6 +11,7 @@ const links = [
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#eventos", label: "Eventos" },
   { href: "#localizacao", label: "Localização" },
+  { href: "#avaliacoes", label: "Avaliações" },
 ];
 
 function toggleTheme() {
